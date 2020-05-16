@@ -74,7 +74,7 @@
 
   var styleSheet = "/togetherjs/togetherjs.css";
 
-  var baseUrl = "https://togetherjs.com";
+  var baseUrl = window.location.href.substring(0, window.location.href.length - 1); //"https://togetherjs.com";
   if (baseUrl == "__" + "baseUrl__") {
     // Reset the variable if it doesn't get substituted
     baseUrl = "";
