@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Create HTML5 Canvas JavaScript Drawing App Example</title>
   </head>
   <body>
     <div id="canvasDiv"></div>
     <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script src="togetherjs-min.js"></script>
     <script type="text/javascript" src="html5-canvas-drawing-app.js"></script>
     <script type="text/javascript">
-    	 drawingApp.init();
-	</script>
+       drawingApp.init();
+       TogetherJSConfig_hubBase = "https://lace-truthful-forgery.glitch.me/";
+       TogetherJS(this);
+    </script>    
   </body>
 </html>
